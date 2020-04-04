@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="scss/style.scss">
+    <link rel="stylesheet" href="scss/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Roboto:100,200&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="nav-wrapper">
+    <header class="hero">
+        <div class="header-wrapper">
+            <div class="barre-navigation">
+            <div class="menu-hamburger">
+				<label for="offcanvas" class="toggler">
+					<span class="fas fa-bars fa-2x">
+					</span>
+                </label>
+            </div>
+            </div>
+            <div class="logo-entreprise">
+                <h1 class="titre-entreprise">Foodies Le magazine</h1>
+            </div>
+            <input type="checkbox" id="offcanvas" class="toggle"/>
+            <div class="nav-wrapper">
             <aside class="nav">
                 <nav>
                     <ul class="menu-principal">
@@ -22,11 +36,8 @@
                 </nav>
             </aside>
         </div>
-        <div class="hero">
-            <div class="titre-entreprise"> <h1> Foodies le magazine</h1></div>
         </div>
     </header>
-    <div class="main">
         <div class="titre-page">
             <h3 class="Collaboration"> Collaboration spéciale</h3>
         </div>
@@ -126,9 +137,9 @@
             </div>
         </article>
     </section>
-</div>
-<footer>
-<h4>@CSTJ|Techniques d'intégration multimédia 2020 -travail de mi-session</h4>    
-</footer>
+    <footer>
+        <h4>@CSTJ|Techniques d'intégration multimédia 2020 -travail de mi-session</h4>    
+        </footer>
+
 </body>
 </html>
