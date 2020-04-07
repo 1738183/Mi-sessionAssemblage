@@ -1,5 +1,5 @@
 @media screen and (min-width: 320px) {
-  body {
+  div.interface {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7,16 +7,17 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  header {
+  div.interface header {
     background: url(../img/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center;
     background-size: cover;
+    margin: 0 auto;
     height: 25vh;
   }
   .header-wrapper {
@@ -46,8 +47,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-item-align: center;
-        align-self: center;
     background: black;
     height: 100px;
     width: 100px;
@@ -56,7 +55,12 @@
     display: none;
   }
   .logo-entreprise {
-    border: #fff 2px solid;
+    border: #fff 3px solid;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 70%;
+    padding: 1px 10px;
   }
   .logo-entreprise > h1:nth-child(2) {
     font-family: 'Roboto' , sans-serif;
@@ -65,12 +69,10 @@
     color: #fff;
     font-family: 'Courgette', cursive;
     font-weight: 200;
+    font-size: 1.3em;
   }
   .titre-page {
-    margin-left: 0.2em;
-    margin-right: 0.5em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin: 10px auto;
     background: #bac373;
     font-family: 'Roboto', sans-serif;
     display: -webkit-box;
@@ -102,25 +104,10 @@
     font-family: 'Roboto', sans-serif;
   }
   .presentation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 25em;
+    height: 15em;
   }
   h4 {
     color: #999999;
-  }
-  .main {
-    padding-top: 0.5em;
-    width: 100%;
-    height: 50vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
