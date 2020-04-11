@@ -1,0 +1,10 @@
+@media screen and (min-width:320px) {
+    
+    div.interface{
+        @include flex-colonne-centre;
+
+        & h4{
+            color : var(--couleurGris_pale);
+        }
+    }
+}

@@ -1,5 +1,7 @@
 
-    .logo-entreprise{
+    @media screen and (min-width:320px) {
+
+     .logo-entreprise{
         border: #fff 3px solid; 
         align-self:center;
         width:70%;
@@ -48,3 +50,4 @@
     .presentation{
         height:15em;
     }
+}

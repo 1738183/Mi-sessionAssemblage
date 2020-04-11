@@ -1,0 +1,50 @@
+@media screen and (min-width: 320px) {
+  .logo-entreprise {
+    border: #fff 3px solid;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 70%;
+    padding: 1px 10px;
+  }
+  .logo-entreprise > h1:nth-child(2) {
+    font-family: 'Roboto' , sans-serif;
+  }
+  .titre-entreprise {
+    text-align: center;
+    color: #fff;
+    font-family: 'Courgette', cursive;
+    font-weight: 200;
+    font-size: 1.3em;
+  }
+  .titre-page {
+    margin: 10px auto;
+    padding: 5px auto;
+    background: #bac373;
+    font-family: 'Roboto', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 98%;
+    height: 1em;
+  }
+  .Collaboration {
+    padding-left: 0.8em;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+  }
+  .titre-presentation {
+    font-family: 'Roboto', sans-serif;
+  }
+  .presentation {
+    height: 15em;
+  }
+}
+/*# sourceMappingURL=premiereSection.css.map */
