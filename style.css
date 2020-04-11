@@ -14,11 +14,23 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  div.interface header {
-    background: url(../img/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center;
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    background: url(img/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center;
     background-size: cover;
     margin: 0 auto;
-    height: 25vh;
+    height: 23vh;
+  }
+  .nav {
+    display: hidden;
   }
   .header-wrapper {
     display: -webkit-box;
@@ -48,8 +60,8 @@
         -ms-flex-align: center;
             align-items: center;
     background: black;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 100%;
   }
   .toggle {
     display: none;
@@ -66,6 +78,7 @@
     font-family: 'Roboto' , sans-serif;
   }
   .titre-entreprise {
+    text-align: center;
     color: #fff;
     font-family: 'Courgette', cursive;
     font-weight: 200;
@@ -73,6 +86,7 @@
   }
   .titre-page {
     margin: 10px auto;
+    padding: 5px auto;
     background: #bac373;
     font-family: 'Roboto', sans-serif;
     display: -webkit-box;
@@ -83,18 +97,11 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 96%;
+    width: 98%;
     height: 1em;
   }
   .Collaboration {
     padding-left: 0.8em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     color: #fff;
     font-size: 10px;
     font-weight: 600;

@@ -13,18 +13,11 @@
         @include flex-colonne-centre;
     }
 
-     header{    
-        display:flex;
-        flex-direction: column;
-        align-content: center;
-        background: url(img/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center;
+     header{        
+        background: url(../img/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center;
         background-size: cover;
         margin: 0 auto;
-        height:23vh; 
-     }
-
-     .nav{
-         display:hidden;
+        height:25vh; 
      }
 
     .header-wrapper {
@@ -63,6 +56,7 @@
         font-family: 'Courgette', cursive;
         font-weight: 200;
         font-size:1.3em;
+     
     }
 
     .titre-page{
@@ -75,9 +69,6 @@
         align-items: center;
         width:98%;
         height:1em;
-    }
-
-    .premiere-section{
     }
 
     .Collaboration{
@@ -98,7 +89,7 @@
         height:15em;
     }
 
-    h4{
+    .art{
         color:#999999;
     }
     
