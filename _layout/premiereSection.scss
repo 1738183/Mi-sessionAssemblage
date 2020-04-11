@@ -1,43 +1,3 @@
-@media screen and (min-width:320px) {
-
-
-    @mixin flex-colonne-centre {
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-    
-    }
-
-    div.interface{
-        @include flex-colonne-centre;
-    }
-
-     header{        
-        background: url(../img/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center;
-        background-size: cover;
-        margin: 0 auto;
-        height:25vh; 
-     }
-
-    .header-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.3);
-    }
-
-    .barre-navigation{
-        @include flex-colonne-centre;
-        background:rgb(0, 0, 0);
-        height:50px;
-        width:100%;
-    }
-    
-    .toggle {
-        display: none;
-    }
 
     .logo-entreprise{
         border: #fff 3px solid; 
@@ -56,7 +16,6 @@
         font-family: 'Courgette', cursive;
         font-weight: 200;
         font-size:1.3em;
-     
     }
 
     .titre-page{
@@ -70,6 +29,7 @@
         width:98%;
         height:1em;
     }
+
 
     .Collaboration{
         padding: {
@@ -87,10 +47,4 @@
 
     .presentation{
         height:15em;
-    }
-
-    .art{
-        color:#999999;
-    }
-    
     }
