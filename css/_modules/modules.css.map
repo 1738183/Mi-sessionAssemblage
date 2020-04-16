@@ -2,7 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "modules.scss"
+        "modules.scss",
+        "authentification.scss"
     ],
     "names": [],
     "file": "modules.css"

@@ -8,32 +8,65 @@
 @media screen and (min-width:320px) {
     
     div.interface{
-        @include flex-colonne-centre;
 
         & h4{
             color : var(--couleurGris_pale);
         }
-    }   
+    } 
+    
+    @media screen and (min-width: 320px) {   
+
 header{    
     @include flex-colonne-centre;
-    background: url(img/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center;
+    background: url(../../img/jay-wennington-N_Y88TWmGwA-unsplash-assets/photo-320.jpg) no-repeat center;
     background-size: cover;
     margin: 0 auto;
     height:23vh; 
  }
 
-
+}
 .header-wrapper {
-    @include flex-colonne-centre;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
 .barre-navigation{
-    @include flex-colonne-centre;
+    display:flex;
+    flex-direction:row;
+    color:#fff;
     background:rgb(0, 0, 0);
-    height:50px;
+    height:30px;
     width:100%;
+}
+
+.logo-entreprise{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    border: #fff 2.5px solid; 
+    width:20em;
+    font-size:0.8em;
+    align-self:center;
+}
+
+.titre-entreprise-un{
+    color:#fff;
+    padding-right:0.5em;
+    font-family: 'Courgette', cursive;
+    font-weight: 400;
+    margin:10px 0px 10px 0px;
+}
+
+.titre-entreprise-deux {
+    color:#fff;
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 200;
+    margin:10px 0px 10px 0px;
 }
 
 }

@@ -1,25 +1,9 @@
 
     @media screen and (min-width:320px) {
 
-     .logo-entreprise{
-        border: #fff 3px solid; 
-        align-self:center;
-        width:70%;
-        padding:1px 10px;
-    }
-
-    .logo-entreprise > h1:nth-child(2) {
-        font-family: 'Roboto' , sans-serif;
-    }
-
-    .titre-entreprise{
-        text-align:center;
-        color:#fff;
-        font-family: 'Courgette', cursive;
-        font-weight: 200;
-        font-size:1.3em;
-    }
-
+    p{
+        text-align:justify;
+    }    
     .titre-page{
         margin:10px auto;
         padding: 5px auto;
@@ -28,9 +12,10 @@
         display:flex;
         align-self:center;
         align-items: center;
-        width:98%;
-        height:1em;
+        width:96%;
+        height:1.4em;
     }
+    
 
 
     .Collaboration{
