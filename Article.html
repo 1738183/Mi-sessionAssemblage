@@ -5,10 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/_base/variables.css">
+    <link rel="stylesheet" href="css/_base/reset.css">
+    <link rel="stylesheet" href="css/_layout/header.css">
+    <link rel="stylesheet" href="css/_layout/navigation.css">
+    <link rel="stylesheet" href="css/_layout/premiereSection.css">
+    <link rel="stylesheet" href="css/_layout/deuxiemeSection.css">
+    <link rel="stylesheet" href="css/_layout/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Roboto:100,200&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="interface">
     <header>
-        <div class="nav-wrapper">
+        <div class="header-wrapper">
+            <div class="barre-navigation">
+            <div class="menu-hamburger">
+                <img src="img/bars-solid.svg">
+				<label for="offcanvas" class="toggler">
+					<span class="fas fa-bars fa-2x">
+					</span>
+                </label>
+            </div>
+            <div class="authentification">
+                <h3>Se connecter</h3>
+            </div>
+            </div>
+            <div class="logo-entreprise">
+                <h1 class="titre-entreprise-un">Foodies </h1> <h1 class="titre-entreprise-deux"> le magazine </h1>
+            </div>
+            <input type="checkbox" id="offcanvas" class="toggle"/>
+            <div class="nav-wrapper">
             <aside class="nav">
                 <nav>
                     <ul class="menu-principal">
@@ -22,11 +48,8 @@
                 </nav>
             </aside>
         </div>
-        <div class="hero">
-            <div class="titre-entreprise"> <h1> Foodies le magazine</h1></div>
         </div>
     </header>
-    <div class="main">
         <div class="titre-page">
             <h3 class="Collaboration"> Collaboration spéciale</h3>
         </div>
@@ -35,7 +58,7 @@
 
     <div class="presentation">
 <h2 class ="titre-presentation"> Le potluck, recevoir sans se casser la tête </h2>
-<h4>Art de recevoir</h4>
+<h4 class="art">Art de recevoir</h4>
 <p>
    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere ante id aliquet tincidunt. Praesent dignissim non metus a sollicitudin. 
    Mauris aliquam sed leo et fringilla. Suspendisse ut tellus sodales, sodales turpis ut, varius elit. Suspendisse cursus justo vitae odio elementum, 
@@ -127,8 +150,9 @@
         </article>
     </section>
 </div>
-<footer>
-<h4>@CSTJ|Techniques d'intégration multimédia 2020 -travail de mi-session</h4>    
-</footer>
+    <footer>
+        <h4>@CSTJ|Techniques d'intégration multimédia 2020 -travail de mi-session</h4>    
+        </footer>
+
 </body>
 </html>

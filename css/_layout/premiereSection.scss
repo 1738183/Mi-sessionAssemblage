@@ -1,0 +1,38 @@
+
+    @media screen and (min-width:320px) {
+
+    p{
+        text-align:justify;
+    }    
+    .titre-page{
+        margin:10px auto;
+        padding: 5px auto;
+        background:#bac373;
+        font-family: 'Roboto', sans-serif;
+        display:flex;
+        align-self:center;
+        align-items: center;
+        width:96%;
+        height:1.4em;
+    }
+    
+
+
+    .Collaboration{
+        padding: {
+          left:0.8em;
+        }
+        color:#fff;
+        font-size:10px;
+        font-weight: 600;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .titre-presentation{
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .presentation{
+        height:15em;
+    }
+}

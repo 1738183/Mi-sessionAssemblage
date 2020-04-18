@@ -1,0 +1,20 @@
+@media screen and (min-width: 320px) {
+  div.interface {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'header' 'premiere-section' 'deuxieme-section' 'footer';
+  }
+  header {
+    grid-area: 'header';
+  }
+  .premiere-section {
+    grid-area: 'premiere-section';
+  }
+  .deuxieme-section {
+    grid-area: 'deuxieme-section';
+  }
+  footer {
+    grid-area: 'footer';
+  }
+}
+/*# sourceMappingURL=mobile-grid.css.map */
