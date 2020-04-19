@@ -1,6 +1,10 @@
 @media screen and (min-width: 320px) {
   div#interface {
     font-family: 'Roboto', sans-serif;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 94%;
   }
   div#interface h4 {
     color: var(--couleurGris_pale);
@@ -87,6 +91,7 @@
   }
   .titre-entreprise-deux {
     color: #fff;
+    font-family: 'Roboto', sans-serif;
     font-weight: 200;
     margin: 10px 0px 10px 0px;
   }

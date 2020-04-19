@@ -10,12 +10,12 @@
         text-align:justify;
     }    
     .titre-page{
-        @include  flex-colonne-centre; 
+        display:flex;
+        justify-items: center;
+        font-family: 'Roboto', sans-serif;
         margin:10px auto;
         padding: 5px auto;
         background:#bac373;
-        display:flex;
-        align-self:center;
         align-items: center;
         width:96%;
         height:1.4em;
