@@ -2,7 +2,7 @@
   div.interface {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: 'header' 'premiere-section' 'deuxieme-section' 'footer';
+        grid-template-areas: 'header' 'premiere-section' 'deuxieme-section' 'footer';
   }
   header {
     grid-area: 'header';
