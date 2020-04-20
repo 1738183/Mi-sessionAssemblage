@@ -1,5 +1,12 @@
 @media screen and (min-width: 320px) {
-  div.interface h4 {
+  div#interface {
+    font-family: 'Roboto', sans-serif;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 94%;
+  }
+  div#interface h4 {
     color: var(--couleurGris_pale);
   }
 }
@@ -84,7 +91,7 @@
   }
   .titre-entreprise-deux {
     color: #fff;
-    font-family: 'Roboto' , sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 200;
     margin: 10px 0px 10px 0px;
   }
@@ -114,43 +121,63 @@
 @media screen and (min-width: 320px) {
   p {
     text-align: justify;
+    font-size: 0.8em;
+    font-weight: 200;
   }
   .titre-page {
-    margin: 10px auto;
-    padding: 5px auto;
-    background: #bac373;
-    font-family: 'Roboto', sans-serif;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-item-align: center;
-        align-self: center;
+    justify-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px auto;
+    padding: 5px auto;
+    background: #bac373;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     width: 96%;
     height: 1.4em;
   }
-  .Collaboration {
+  #Collaboration {
     padding-left: 0.8em;
     color: #fff;
-    font-size: 10px;
-    font-weight: 600;
-    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
   }
-  .titre-presentation {
-    font-family: 'Roboto', sans-serif;
+  #titre-presentation {
+    font-weight: 200;
+  }
+  #art {
+    color: #999999;
+    font-weight: 500;
+  }
+  .orange {
+    color: #ff6956;
+    font-weight: 500;
   }
   .presentation {
     height: 15em;
+  }
+  .photo {
+    font-size: 0.4em;
+    font-weight: 200;
+  }
+  #contenu {
+    font-weight: 500;
   }
 }
 
 .consulter {
   color: white;
   background: #c3ce73;
-  padding: 0.5em;
-  border-radius: 2px;
+  padding: 0.5em 1em 0.5em 1em;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.titre-recette {
+  font-weight: 500;
 }
 
 @media screen and (min-width: 320px) {
@@ -172,7 +199,6 @@
     color: #fff;
     width: 100%;
     height: 3vh;
-    font-family: 'Roboto' , sans-serif;
     font-size: 0.6em;
     font-weight: 500;
     letter-spacing: 0.1em;

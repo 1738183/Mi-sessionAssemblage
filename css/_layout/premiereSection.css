@@ -1,6 +1,8 @@
 @media screen and (min-width: 320px) {
   p {
     text-align: justify;
+    font-size: 0.8em;
+    font-weight: 200;
   }
   .titre-page {
     display: -webkit-box;
@@ -21,7 +23,14 @@
     padding-left: 0.8em;
     color: #fff;
     font-size: 11px;
-    font-weight: 600;
+    font-weight: 500;
+  }
+  #titre-presentation {
+    font-weight: 200;
+  }
+  #art {
+    color: #999999;
+    font-weight: 500;
   }
   .orange {
     color: #ff6956;
@@ -30,8 +39,33 @@
   .presentation {
     height: 15em;
   }
+  .photo {
+    color: #7d7d7d;
+    font-size: 0.4em;
+    font-weight: 200;
+  }
+  #left-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   #contenu {
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 0.7em;
+    line-height: 2em;
   }
 }
 /*# sourceMappingURL=premiereSection.css.map */
