@@ -1,7 +1,7 @@
 .deuxieme-section {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 'premiere-article' 'deuxieme-article' 'troisieme-article' 'publicite';
-      grid-template-rows: 'premiere-article' 'deuxieme-article' 'troisieme-article' 'publicite';
+  -ms-grid-rows: 'premiere-article' 'deuxieme-article' 'troisieme-article' 'publicite';
+      grid-template-rows: 'premiere-article' 'deuxieme-article' 'troisieme-article' 'publicite';
 }
 /*# sourceMappingURL=sousGrilleSection.css.map */
