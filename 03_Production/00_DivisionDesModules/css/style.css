@@ -1,0 +1,359 @@
+:root {
+  --couleurGris_pale: hsl(0, 0%, 60%);
+}
+
+@media screen and (min-width: 320px) {
+  div#interface {
+    max-width: 500px;
+    margin: auto;
+  }
+  header {
+    grid-area: 'header';
+  }
+  .premiere-section {
+    grid-area: 'premiere-section';
+  }
+  .deuxieme-section {
+    grid-area: 'deuxieme-section';
+  }
+  footer {
+    grid-area: 'footer';
+  }
+}
+
+#seconde-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 'premiere-article' 'deuxieme-article' 'troisieme-article' 'publicite';
+      grid-template-rows: 'premiere-article' 'deuxieme-article' 'troisieme-article' 'publicite';
+}
+
+#premiere-recette {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.5rem;
+  -ms-grid-rows: 2.5em 13em 8.5em 2em;
+      grid-template-rows: 2.5em 13em 8.5em 2em;
+}
+
+#deuxieme-recette {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  grid-gap: 1.5rem;
+  -ms-grid-rows: 2.5em 13em 16.5em 2em;
+      grid-template-rows: 2.5em 13em 16.5em 2em;
+}
+
+#troisieme-recette {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  grid-gap: 1.5rem;
+  -ms-grid-rows: 2.5em 13em 13.5em 2em;
+      grid-template-rows: 2.5em 13em 13.5em 2em;
+}
+
+@media screen and (min-width: 320px) {
+  div#interface {
+    font-family: 'Roboto', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 94%;
+  }
+  div#interface h4 {
+    color: var(--couleurGris_pale);
+  }
+}
+
+@media screen and (min-width: 320px) and (min-width: 320px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: url("03_Production/00_DivisionDesModules/img/jay-wennington-N_Y88TWmGwA-unsplash-assets/photo-320.jpg") no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 25vh;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .header-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  #barre-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #fff;
+    background: black;
+    height: 30px;
+    width: 100%;
+  }
+  #menu-hamburger {
+    height: 9vh;
+    width: 10vw;
+    font-size: 1em;
+    color: #fff;
+  }
+  #logo-entreprise {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: #fff 2.5px solid;
+    width: 20em;
+    font-size: 0.8em;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  #titre-entreprise-un {
+    color: #fff;
+    padding-right: 0.5em;
+    font-family: 'Courgette', cursive;
+    font-weight: 400;
+    margin: 10px 0px 10px 0px;
+  }
+  #titre-entreprise-deux {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    margin: 10px 0px 10px 0px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  nav {
+    display: none;
+  }
+  aside {
+    display: none;
+    background-color: #07090d;
+    color: #fff;
+    width: 60vw;
+    margin-left: -110%;
+    height: 100%;
+    position: absolute;
+    top: 3em;
+    -webkit-transition: margin 0.5s ease;
+    transition: margin 0.5s ease;
+  }
+  .toggle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  #premiere-section {
+    height: 69em;
+  }
+  p {
+    text-align: justify;
+    font-size: 0.8em;
+    font-weight: 200;
+  }
+  .titre-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px auto;
+    padding: 5px auto;
+    background: #bac373;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 1.4em;
+  }
+  #Collaboration {
+    padding-left: 0.8em;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+  }
+  i {
+    font-size: 0.5em;
+    text-align: center;
+    font-weight: 600;
+  }
+  #titre-presentation {
+    font-weight: 200;
+  }
+  #art {
+    color: #999999;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  .orange {
+    color: #ff6956;
+    font-weight: 500;
+  }
+  .presentation {
+    height: 15em;
+  }
+  #photo {
+    color: #313131;
+    font-size: 0.5em;
+    font-weight: 200;
+  }
+  #origine {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #left-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #man {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 150px;
+    border: 2px solid #ffbe9e;
+  }
+  #contenu {
+    font-weight: 300;
+    font-size: 0.8em;
+    line-height: 1.5em;
+  }
+  #plat {
+    line-height: 1.6em;
+  }
+}
+
+#seconde-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 125em;
+}
+
+.consulter {
+  color: white;
+  background: #c3ce73;
+  padding: 0.5em 1em 0.5em 1em;
+  font-size: 0.8em;
+  font-weight: 500;
+  width: 9em;
+  border-radius: 6px;
+}
+
+.titre-recette {
+  font-weight: 500;
+}
+
+.recette {
+  line-height: 25px;
+}
+
+@media screen and (min-width: 320px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #222222;
+    color: #fff;
+    width: 100%;
+    height: 3vh;
+    font-size: 0.6em;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+  }
+}
+/*# sourceMappingURL=style.css.map */

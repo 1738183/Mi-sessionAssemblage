@@ -4,35 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/_base/variables.css">
-    <link rel="stylesheet" href="css/_base/reset.css">
-    <link rel="stylesheet" href="css/_layout/header.css">
-    <link rel="stylesheet" href="css/_layout/navigation.css">
-    <link rel="stylesheet" href="css/_layout/premiereSection.css">
-    <link rel="stylesheet" href="css/_layout/secondeSection.css">
-    <link rel="stylesheet" href="css/_layout/footer.css">
+    <link rel="stylesheet" href="03_Production/00_DivisionDesModules/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Courgette|Roboto:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="header-wrapper">
-            <div class="barre-navigation">
-            <div class="menu-hamburger">
-                <img src="img/bars-solid.svg">
-				<label for="offcanvas" class="toggler">
-					<span class="fas fa-bars fa-2x">
-					</span>
-                </label>
+            <div id="barre-navigation">
+            <div id="menu-hamburger">
+                <i class="fas fa-bars"></i>
             </div>
             <div class="authentification">
                 <h3>Se connecter</h3>
             </div>
             </div>
-            <div class="logo-entreprise">
-                <h1 class="titre-entreprise-un">Foodies </h1> <h1 class="titre-entreprise-deux"> le magazine </h1>
+            <div id="logo-entreprise">
+                <h1 id="titre-entreprise-un">Foodies </h1> <h1 id="titre-entreprise-deux"> le magazine </h1>
             </div>
-            <input type="checkbox" id="offcanvas" class="toggle"/>
             <div class="nav-wrapper">
             <aside class="nav">
                 <nav>
@@ -50,25 +38,27 @@
         </div>
     </header>
     
+    <div id="interface">
         <div class="titre-page">
             <h3 id="Collaboration"> Collaboration spéciale</h3>
         </div>
 
-    <div id="interface">
-    <section class="premiereSection">
+    <section id="premiere-section">
 
     <div class="presentation">
 <h2 id="titre-presentation"> Le potluck, recevoir sans se casser la tête </h2>
 <h4 id="art">Art de recevoir</h4>
-<p>
+<i>
    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere ante id aliquet tincidunt. Praesent dignissim non metus a sollicitudin. 
    Mauris aliquam sed leo et fringilla. Suspendisse ut tellus sodales, sodales turpis ut, varius elit. Suspendisse cursus justo vitae odio elementum, 
    id aliquam tellus vestibulum.
-</p>
+</i>
     </div>
     <div id="origine">
         <div id="left-content">
-            <img src="man-shape.svg"> 
+            <div id="man"> 
+            <img src="03_Production/00_DivisionDesModules/img/man-shape.svg"> 
+            </div>
             <div id="auteur"> 
                 <h4 id="prenom-auteur">Louis</h4>
                 <h4>Tremblay</h4>
@@ -85,23 +75,26 @@
     </div>
     <div id="bonheur-famille">
         <h3 class="orange">Du bonheur à partager en famille et entre amis</h3>
-        <img src="img/josh-frenette-dqA8Fc-D-os-unsplash-assets/photo-300.jpg">
-        <h4 class="photo">Photo de Josh Frenette</h4>
-        <i id="contenu">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere ante id aliquet tincidunt. 
-            Praesent dignissim non metus a sollicitudin. Mauris aliquam sed leo et fringilla. Suspendisse ut tellus sodales, 
-            sodales turpis ut, varius elit. Suspendisse cursus justo vitae odio elementum, id aliquam tellus vestibulum.
-        </i>
+        <img src="03_Production/00_DivisionDesModules/img/josh-frenette-dqA8Fc-D-os-unsplash-assets/photo-300.jpg">
+        <h4 id="photo">Photo de Josh Frenette</h4>
+        <p id="contenu">
+            Integer tristique magna eu neque convallis, a efficitur ipsum rutrum. 
+            Vivamus bibendum lobortis orci, a dictum diam semper id. Etiam scelerisque, 
+            dolor at ultrices porttitor, nibh nisl laoreet lorem, ac pharetra diam justo non magna. 
+            Sed nec varius lorem, non rhoncus lacus. Aliquam tristique sodales tortor vitae euismod. 
+            Quisque pulvinar orci purus, eget vulputate erat feugiat a. Mauris rhoncus tristique ornare. 
+            Vivamus pulvinar lacinia velit eu sagittis.
+        </p>
     </div>
     <div class="publicite">
         
     </div>
     </section>
 
-    <section id="deuxieme-section">
+    <section id="seconde-section">
         <div id="recettes-presentation">
           <h3 class="orange">Des suggestions de plats à apporter</h3>  
-          <p> Morbi neque ante, porttitor at nisi eu, hendrerit venenatis sapien. 
+          <p id="plat"> Morbi neque ante, porttitor at nisi eu, hendrerit venenatis sapien. 
              Suspendisse potenti. Etiam volutpat facilisis leo ac facilisis. 
              Praesent sit amet odio in nunc eleifend cursus gravida sit amet libero. 
              Integer eu convallis eros, eget viverra justo. Phasellus sagittis in nisi quis vulputate. Phasellus semper erat hendrerit porttitor cursus. 
@@ -110,34 +103,35 @@
          </p> 
         </div>
         <article class="recettes">
-            <div class="premiere-recette">
+            <div id="premiere-recette">
                 <h3 class="titre-recette">
                     Salade de crevettes de saison
                 </h3>
-                <img src="img/ryan-concepcion-w_z0RJCSBiE-unsplash-assets/photo-300.jpg" >
-                <p>
+                <img src="03_Production/00_DivisionDesModules/img/ryan-concepcion-w_z0RJCSBiE-unsplash-assets/photo-300.jpg" >
+                <p class="recette">
                   Eleifend sit amet ipsum quis, aliquam luctus neque. In vitae justo ut risus volutpat accumsan sed nec est. 
                   Nunc leo arcu, porttitor eget turpis ac, consequat porttitor risus. Mauris porttitor tristique eros, non dictum purus aliquet nec.
                 </p>
                 <bt class="consulter">Consulter la recette</bt>
             </div>
-            <div class="deuxieme-recette"></div>
+            <div id="deuxieme-recette">
             <h3 class="titre-recette">
                 Une salade de tomates fraîches
             </h3>
-            <img src="img/mateus-campos-felipe-WFpIKyhUMpg-unsplash-assets/photo-300.jpg">
-            <p>
+            <img src="03_Production/00_DivisionDesModules/img/mateus-campos-felipe-WFpIKyhUMpg-unsplash-assets/photo-300.jpg">
+            <p class="recette">
              Porta vitae magna eget, vestibulum molestie lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
              Cras laoreet sagittis risus, eu luctus nibh accumsan sed. Nunc neque nisl, imperdiet nec nibh quis, luctus luctus sem. Suspendisse gravida ipsum eu velit pharetra, non suscipit ipsum dignissim. In aliquam maximus nisl, a commodo ipsum dictum ut. 
              Etiam placerat, nisi vel facilisis dapibus, nisl sapien pellentesque velit, sit amet gravida est dolor aliquam lectus.
             </p>
             <bt class="consulter">Consulter la recette</bt>
-            <div class="troisieme-recette">
+        </div>
+            <div id="troisieme-recette">
                 <h3 class="titre-recette">
                 De petits sandwich tout simples
                 </h3>
-                <img src="img/anna-sullivan-BtLSvyFcBS4-unsplash-assets/photo-300.jpg">
-                <p>
+                <img src="03_Production/00_DivisionDesModules/img/anna-sullivan-BtLSvyFcBS4-unsplash-assets/photo-300.jpg">
+                <p class="recette">
                     Cras laoreet sagittis risus, eu luctus nibh accumsan sed. Nunc neque nisl, imperdiet nec nibh quis, luctus luctus sem. 
                     Suspendisse gravida ipsum eu velit pharetra, non suscipit ipsum dignissim. In aliquam maximus nisl, a commodo ipsum dictum ut.
                     Etiam placerat, nisi vel facilisis dapibus, nisl sapien pellentesque velit, sit amet gravida est dolor aliquam lectus.    

@@ -1,0 +1,34 @@
+#seconde-section{
+    display:grid;
+    grid-template-rows:
+    'premiere-article'
+    'deuxieme-article'
+    'troisieme-article'
+    'publicite'
+}
+
+#premiere-recette{
+    display:grid;
+    grid-gap:1.5rem;
+    grid-template-rows:
+    2.5em 13em 8.5em 2em;
+}
+
+#deuxieme-recette{
+    display:grid;
+    margin:auto;
+    grid-gap:1.5rem;
+    grid-template-rows:
+    2.5em 13em 16.5em 2em;
+}
+
+#troisieme-recette{
+    display:grid;
+    margin:auto;
+    grid-gap:1.5rem;
+    grid-template-rows:
+    2.5em 13em 13.5em 2em;
+}
+
+
+

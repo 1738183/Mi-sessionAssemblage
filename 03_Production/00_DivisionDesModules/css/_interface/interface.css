@@ -1,0 +1,52 @@
+@media screen and (min-width: 320px) {
+  div#interface {
+    max-width: 500px;
+    margin: auto;
+  }
+  header {
+    grid-area: 'header';
+  }
+  .premiere-section {
+    grid-area: 'premiere-section';
+  }
+  .deuxieme-section {
+    grid-area: 'deuxieme-section';
+  }
+  footer {
+    grid-area: 'footer';
+  }
+}
+
+#seconde-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 'premiere-article' 'deuxieme-article' 'troisieme-article' 'publicite';
+      grid-template-rows: 'premiere-article' 'deuxieme-article' 'troisieme-article' 'publicite';
+}
+
+#premiere-recette {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.5rem;
+  -ms-grid-rows: 2.5em 13em 8.5em 2em;
+      grid-template-rows: 2.5em 13em 8.5em 2em;
+}
+
+#deuxieme-recette {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  grid-gap: 1.5rem;
+  -ms-grid-rows: 2.5em 13em 16.5em 2em;
+      grid-template-rows: 2.5em 13em 16.5em 2em;
+}
+
+#troisieme-recette {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  grid-gap: 1.5rem;
+  -ms-grid-rows: 2.5em 13em 13.5em 2em;
+      grid-template-rows: 2.5em 13em 13.5em 2em;
+}
+/*# sourceMappingURL=interface.css.map */

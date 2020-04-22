@@ -1,0 +1,29 @@
+@mixin flex-colonne-centre {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+#seconde-section{
+    @include flex-colonne-centre;
+    height:125em;
+}
+
+.consulter{
+    color:hsl(0, 100%, 100%);
+    background: hsl(67, 48%, 63%);
+    padding:0.5em 1em 0.5em 1em;
+    font-size:0.8em;
+    font-weight: 500;
+    width:9em;
+    border-radius: 6px;
+}
+
+.titre-recette{
+    font-weight:500;
+}
+
+.recette{
+    line-height:25px;
+}
