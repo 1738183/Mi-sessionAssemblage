@@ -72,7 +72,7 @@
             align-items: center;
     -ms-flex-item-align: center;
         align-self: center;
-    width: 94%;
+    width: 98%;
   }
   div#interface h4 {
     color: var(--couleurGris_pale);
@@ -94,7 +94,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: url("03_Production/00_DivisionDesModules/img/jay-wennington-N_Y88TWmGwA-unsplash-assets/photo-320.jpg") no-repeat center;
+    background-image: url("../../img/jay-wennington-N_Y88TWmGwA-unsplash-assets/photo-320.jpg") no-repeat center;
     background-size: cover;
     margin: 0 auto;
     height: 25vh;
@@ -103,6 +103,7 @@
 
 @media screen and (min-width: 320px) {
   .header-wrapper {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -128,19 +129,29 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     color: #fff;
     background: black;
-    height: 30px;
+    height: 2.5em;
     width: 100%;
   }
   #menu-hamburger {
+    position: relative;
+    left: 0.9em;
     height: 9vh;
-    width: 10vw;
+    width: 7vw;
     font-size: 1em;
     color: #fff;
+  }
+  #authentification {
+    position: relative;
+    right: 0.9em;
+    font-size: 0.7em;
   }
   #logo-entreprise {
     display: -webkit-box;
@@ -197,7 +208,15 @@
 
 @media screen and (min-width: 320px) {
   #premiere-section {
-    height: 69em;
+    height: 78em;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   p {
     text-align: justify;
@@ -311,7 +330,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 125em;
+  margin: 0 auto;
+  height: 127em;
 }
 
 .consulter {

@@ -12,7 +12,7 @@
        font-family: 'Roboto', sans-serif;
        @include flex-colonne-centre;
        align-self: center;
-       width:94%;
+       width:98%;
         & h4{
             color : var(--couleurGris_pale);
         }
@@ -22,7 +22,7 @@
 
 header{    
     @include flex-colonne-centre;
-    background: url("03_Production/00_DivisionDesModules/img/jay-wennington-N_Y88TWmGwA-unsplash-assets/photo-320.jpg") no-repeat center;
+    background-image: url("../../img/jay-wennington-N_Y88TWmGwA-unsplash-assets/photo-320.jpg")no-repeat center;
     background-size: cover;
     margin: 0 auto;
     height:25vh; 
@@ -30,6 +30,7 @@ header{
 
 }
 .header-wrapper {
+    position:relative;
     display:flex;
     flex-direction: column;
     justify-content:space-between;
@@ -42,18 +43,27 @@ header{
 #barre-navigation{
     display:flex;
     flex-direction:row;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     color:#fff;
     background:rgb(0, 0, 0);
-    height:30px;
+    height:2.5em;
     width:100%;
 }
 
 #menu-hamburger{
+    position:relative;
+    left:0.9em;
     height:9vh;
-    width:10vw;
+    width:7vw;
     font-size:1em;
     color:#fff;
+}
+
+#authentification{
+    position:relative;
+    right:0.9em;
+    font-size:0.7em;
 }
 
 #logo-entreprise{
