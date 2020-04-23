@@ -9,6 +9,13 @@
     @include flex-colonne-centre;
     margin:0 auto;
     height:127em;
+    width:90vw;
+}
+
+#recettes{
+    @include flex-colonne-centre;
+    width:100vw;
+
 }
 
 .consulter{

@@ -1,102 +1,125 @@
-    @mixin flex-colonne-centre {
-       display:flex;
-       flex-direction:column;
-       justify-content:center;
-       align-items:center;
+@mixin flex-colonne-centre {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
-    @media screen and (min-width:320px) {
+ @media screen and (min-width:320px) {
 
-    #premiere-section{
-        height:78em;
-        margin:0 auto;
-        display:flex;
-        flex-direction: column;
+ #premiere-section{
+    @include flex-colonne-centre;
+     height:70em;
+     margin:0 auto;
+     width:90vw;
+ }
 
-    }
+ p{
+     text-align:justify;
+     font-size:0.8em;
+     font-weight: 200;
+ }    
+ .titre-page{
+     display:flex;
+     justify-items: center;
+     font-family: 'Roboto', sans-serif;
+     margin:15px auto;
+     padding:5px auto;
+     background:#bac373;
+     align-items: center;
+     width:100%;
+     height:1.4em;
+ }
 
-    p{
-        text-align:justify;
-        font-size:0.8em;
-        font-weight: 200;
-    }    
-    .titre-page{
-        display:flex;
-        justify-items: center;
-        font-family: 'Roboto', sans-serif;
-        margin:15px auto;
-        padding:5px auto;
-        background:#bac373;
-        align-items: center;
-        width:100%;
-        height:1.4em;
-    }
+ #Collaboration{
+     padding: {
+       left:0.8em;
+     }
+     color:#fff;
+     font-size:11px;
+     font-weight: 500;
+ }
 
-    #Collaboration{
-        padding: {
-          left:0.8em;
-        }
-        color:#fff;
-        font-size:11px;
-        font-weight: 500;
-    }
+ #presentation{ 
+    @include flex-colonne-centre;
+    justify-content: space-between;
+    align-items:flex-start;
+}
 
-    i{
-        font-size:0.5em;
-        text-align:center;
-        font-weight:600;
-    }
+ #titre-presentation{
+     font-weight: 200;
+ }
 
-    #titre-presentation{
-        font-weight: 200;
-    }
+ #art{
+     color:hsl(0, 0%, 60%);
+     font-size:0.7em;
+     font-weight:600;
+     margin-top:0em;
+     margin-bottom:2em;
+ }
 
-    #art{
-        color:hsl(0, 0%, 60%);
-        font-size:0.7em;
-        font-weight:600;
-    
-    }
+ i{
+     font-size:0.6em;
+     text-align:center;
+     font-weight:500;
+ }
 
-    .orange{
-        color:rgb(255, 105, 86);
-        font-weight: 500;
-    }
+ .orange{
+     color:rgb(255, 105, 86);
+     font-weight: 500;
+ }
 
-    .presentation{
-        height:15em;
-    }
+ #photo{
+     color:rgb(37, 37, 37);
+     font-size:0.5em;
+     font-weight:200;
+ }
+ 
+ #auteur{
+    @include flex-colonne-centre;
+    justify-content: space-around;
+    align-items: center;
+    width:80vw;
+    height:12em;
+    flex-direction:row;
+}
 
-    #photo{
-        color:rgb(49, 49, 49);
-        font-size:0.5em;
-        font-weight:200;
-    }
+ #border{
+     @include flex-colonne-centre;
+     border:2px solid hsl(20, 100%, 81%);
+     width:120px;
+     height:130px;
+ }
 
-    #origine{
-        display:flex;
-        flex-direction: column;
-    }
+ #man{
+     position:relative;
+     top:17px;
+     width:150px;
+ }
+ 
+ #nom-auteur{
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     color:hsl(0, 0%, 16%);
+ }
 
-    #left-content{
-        @include flex-colonne-centre;
-        justify-content: flex-start;
-    }
+ #prenom-auteur{
+     margin-bottom:0em;
+ }
 
-    #man{
-        display:flex;
-        justify-content: center;
-        width:150px;
-        border:2px solid hsl(20, 100%, 81%);
-    }
+ #famille-auteur{
+     font-size:0.8em;
+ }
 
-    #contenu{
-        font-weight:300;
-        font-size:0.8em;
-        line-height: 1.5em;
-    }
+ #contenu{
+     font-weight:300;
+     font-size:0.8em;
+     line-height: 1.5em;
+ }
 
-    #plat{
-        line-height:1.6em;
+ #plat{
+     line-height:1.6em;
 
-    }
+ }
 }

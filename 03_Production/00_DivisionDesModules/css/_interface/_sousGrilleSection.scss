@@ -1,33 +1,38 @@
-#seconde-section{
-    display:grid;
-    grid-template-rows:
-    'premiere-article'
-    'deuxieme-article'
-    'troisieme-article'
-    'publicite'
+@mixin flex-colonne-centre {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 
 #premiere-recette{
+    @include flex-colonne-centre;
+    width:18em;
     display:grid;
     grid-gap:1.5rem;
     grid-template-rows:
     2.5em 13em 8.5em 2em;
+    margin-bottom:1em;
 }
 
 #deuxieme-recette{
+    @include flex-colonne-centre;
+    width:18em;
     display:grid;
-    margin:auto;
     grid-gap:1.5rem;
     grid-template-rows:
     2.5em 13em 16.5em 2em;
+    margin-bottom:1em;
 }
 
 #troisieme-recette{
+    @include flex-colonne-centre;
+    width:18em;
     display:grid;
-    margin:auto;
     grid-gap:1.5rem;
     grid-template-rows:
     2.5em 13em 13.5em 2em;
+    margin-bottom:1em;
 }
 
 
