@@ -7,9 +7,11 @@
 
 #seconde-section{
     @include flex-colonne-centre;
-    margin:0 auto;
-    height:127em;
-    width:90vw;
+    height:132em;
+}
+
+#recettes-presentation{
+    width: 18em;
 }
 
 #recettes{

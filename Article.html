@@ -3,37 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Foodies le magazine</title>
     <link rel="stylesheet" href="03_Production/00_DivisionDesModules/css/style.css">
+    <link rel="stylesheet" media="all and (orientation:portrait)" href="portrait.css">
+    <link rel="stylesheet" media="all and (orientation:landscape)" href="landscape.css">
     <link href="https://fonts.googleapis.com/css?family=Courgette|Roboto:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <header>
         <div class="header-wrapper">
             <div id="barre-navigation">
-            <img id="menu-hamburger" src="03_Production/00_DivisionDesModules/img/bars-solid.svg">
-            <div id="authentification">
-                <h3>Se connecter</h3>
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <img id="menu-hamburger" src="03_Production/00_DivisionDesModules/img/bars-solid.svg">
+                </label>
+                    
+                <div class="side-bar">
+                        <ul>
+                            <li> <a href ="#">Recettes </a> </li>
+                            <li> <a href ="#">Accords mets-vins</a> </li>
+                            <li> <a href ="#">Accords mets-bières</a></li>
+                            <li> <a href ="#">Foodtrotter</a></li>
+                            <li> <a href ="#">Coups de food</a></li>
+                            <li> <a href ="#">Art de recevoir</a></li>
+                        </ul>
+                </div>
+            
+                <div id="authentification">
+                    <h3>Se connecter</h3>
+                </div>
             </div>
-        </div>
+         <picture class="hero">
+            <source media="(min-width: 320px)" 
+                    srcset="03_Production/00_DivisionDesModules/img/jay-wennington-N_Y88TWmGwA-unsplash-assets/photo-320.jpg">
+            <source media="(min-width: 768px)" 
+                    srcset="03_Production/00_DivisionDesModules/img/jay-wennington-N_Y88TWmGwA-unsplash-assets/photo-768.jpg">    
+                <img src="03_Production/00_DivisionDesModules/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="hero" style="width:auto;">    
+            </picture>   
+  
             <div id="logo-entreprise">
                 <h1 id="titre-entreprise-un">Foodies </h1> <h1 id="titre-entreprise-deux"> le magazine </h1>
             </div>
-            <div class="nav-wrapper">
-            <aside class="nav">
-                <nav>
-                    <ul class="menu-principal">
-                        <li>Recettes </li>
-                        <li>Accords mets-vins</li>
-                        <li>Accords mets-bières</li>
-                        <li>Foodtrotter</li>
-                        <li>Coups de food</li>
-                        <li>Art de recevoir</li>
-                    </ul>
-                </nav>
-            </aside>
-        </div>
-        </div>
+    </div>  
     </div>
     </header>
     

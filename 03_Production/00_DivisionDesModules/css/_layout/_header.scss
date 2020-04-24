@@ -6,58 +6,39 @@
     align-items:center;
 }
 @media screen and (min-width:320px) {
-    
-    div#interface{
 
-       font-family: 'Roboto', sans-serif;
-       @include flex-colonne-centre;
-       align-self: center;
-       width:98%;
-        & h4{
-            color : var(--couleurGris_pale);
-        }
-    } 
+    body{
+        margin:0em;
+    }
     
-    @media screen and (min-width: 320px) {   
-
 header{    
     @include flex-colonne-centre;
-    background-image: url("../../img/jay-wennington-N_Y88TWmGwA-unsplash-assets/photo-320.jpg")no-repeat center;
-    background-size: cover;
-    margin: 0 auto;
-    height:25vh; 
+    width:100vw;
+    height:30vh; 
  }
 
-}
 .header-wrapper {
-    position:relative;
     display:flex;
-    flex-direction: column;
-    justify-content:space-between;
-    align-items:center;
+    flex-direction: column; 
     width:100%;
-    height:100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    height:30vh;
+}
+
+.hero{
+    align-self: center;
+    
 }
 
 #barre-navigation{
     display:flex;
-    flex-direction:row;
     align-items: center;
     justify-content: space-between;
     color:#fff;
-    background:rgb(0, 0, 0);
-    height:2.5em;
+    position:fixed;
     width:100%;
-}
-
-#menu-hamburger{
-    position:relative;
-    left:0.9em;
-    height:9vh;
-    width:7vw;
-    font-size:1em;
-    color:#fff;
+    top:0em;
+    background:hsl(0, 0, 0);
+    height:2.5em;
 }
 
 #authentification{
@@ -67,13 +48,14 @@ header{
 }
 
 #logo-entreprise{
-    display:flex;
+    @include flex-colonne-centre;
     flex-direction:row;
-    justify-content:center;
     border: #fff 2.5px solid; 
     width:20em;
     font-size:0.8em;
-    align-self:center;
+    align-self: center;;
+    position:absolute;
+    top:7em;
 }
 
 #titre-entreprise-un{

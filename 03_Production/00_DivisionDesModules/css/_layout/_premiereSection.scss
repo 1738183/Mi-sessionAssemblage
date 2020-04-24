@@ -10,7 +10,7 @@
     @include flex-colonne-centre;
      height:70em;
      margin:0 auto;
-     width:90vw;
+     width:18em;
  }
 
  p{
@@ -19,14 +19,14 @@
      font-weight: 200;
  }    
  .titre-page{
-     display:flex;
-     justify-items: center;
+     @include flex-colonne-centre;
+     align-items: flex-start;
      font-family: 'Roboto', sans-serif;
-     margin:15px auto;
+     margin:1em auto;
+     margin-top:0em;
      padding:5px auto;
      background:#bac373;
-     align-items: center;
-     width:100%;
+     width:18em;
      height:1.4em;
  }
 
@@ -41,15 +41,17 @@
 
  #presentation{ 
     @include flex-colonne-centre;
-    justify-content: space-between;
-    align-items:flex-start;
+    justify-content: center;
+    width:18em;
 }
 
  #titre-presentation{
      font-weight: 200;
+     margin-bottom:0.2em;
  }
 
  #art{
+     align-self: flex-start;
      color:hsl(0, 0%, 60%);
      font-size:0.7em;
      font-weight:600;
@@ -58,7 +60,8 @@
  }
 
  i{
-     font-size:0.6em;
+     line-height:1.7;
+     font-size:0.5em;
      text-align:center;
      font-weight:500;
  }
@@ -76,11 +79,10 @@
  
  #auteur{
     @include flex-colonne-centre;
-    justify-content: space-around;
-    align-items: center;
-    width:80vw;
+    justify-content: center;
+    width:18em;
     height:12em;
-    flex-direction:row;
+    flex-direction:column;
 }
 
  #border{
@@ -91,24 +93,27 @@
  }
 
  #man{
-     position:relative;
-     top:17px;
+     padding-top:2.2em;
      width:150px;
  }
  
  #nom-auteur{
      display:flex;
      flex-direction: column;
-     align-items: center;
-     justify-content: space-between;
+     align-items:center ;
+     justify-content: center; 
+     margin:0em;     
      color:hsl(0, 0%, 16%);
  }
 
  #prenom-auteur{
-     margin-bottom:0em;
+     color:hsl(0, 0%, 0%);
+     margin-bottom:0px;
+     padding-bottom:2em;
  }
 
  #famille-auteur{
+     margin:0em;
      font-size:0.8em;
  }
 
@@ -121,5 +126,16 @@
  #plat{
      line-height:1.6em;
 
+ }
+ 
+ #origine{
+     margin-top:0em;
+     padding-top:0em;
+     width:18em;
+ }
+
+ #bonheur-famille{
+     @include flex-colonne-centre;
+     width:18em;
  }
 }
