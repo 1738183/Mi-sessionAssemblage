@@ -111,6 +111,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     height: 30vh;
   }
@@ -123,9 +129,18 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-direction: row;
+        flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -177,6 +192,25 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
     margin: 10px 0px 10px 0px;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  #interface {
+    width: 50em;
+  }
+  header {
+    height: 31em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #logo-entreprise {
+    top: 10em;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -281,7 +315,7 @@
             align-items: flex-start;
     font-family: 'Roboto', sans-serif;
     margin: 1em auto;
-    margin-top: 0em;
+    margin-top: 0.4em;
     padding: 5px auto;
     background: #bac373;
     width: 18em;
@@ -312,7 +346,8 @@
   }
   #titre-presentation {
     font-weight: 200;
-    margin-bottom: 0.2em;
+    margin-top: 2.2em;
+    margin-bottom: 0.3em;
   }
   #art {
     -ms-flex-item-align: start;
@@ -329,14 +364,12 @@
     text-align: center;
     font-weight: 500;
   }
-  .orange {
-    color: #ff6956;
-    font-weight: 500;
-  }
   #photo {
     color: #252525;
     font-size: 0.5em;
     font-weight: 200;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   #auteur {
     display: -webkit-box;
@@ -352,11 +385,12 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     width: 18em;
-    height: 11em;
+    height: 14em;
     flex-direction: column;
   }
   #border {
@@ -395,15 +429,31 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 0em;
+    margin-left: 2.2em;
     color: #292929;
   }
   #prenom-auteur {
+    margin-bottom: 0px;
+    margin-top: 0.8em;
+  }
+  div#auteur > #nom-auteur > h4:first-of-type {
     color: black;
-    margin-top: 0em;
+    font-size: 0.9em;
+  }
+  div#auteur > #nom-auteur > h4 {
+    color: #999999;
   }
   #famille-auteur {
     margin: 0em;
     font-size: 0.8em;
+  }
+  div#origine > .orange {
+    margin-top: 0em;
+  }
+  .orange {
+    color: #ff6956;
+    font-weight: 500;
   }
   #contenu {
     font-weight: 300;
@@ -436,60 +486,116 @@
   }
 }
 
-#seconde-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 132em;
+@media screen and (orientation: landscape) {
+  .titre-page {
+    width: 90vw;
+  }
+  #premiere-section {
+    width: 80vw;
+    height: 60em;
+  }
+  #presentation {
+    width: 90vw;
+    height: 25em;
+  }
+  #titre-presentation {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 0em;
+  }
+  #auteur {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  #origine {
+    width: 90vw;
+  }
+  #bonheur-famille {
+    width: 90vw;
+  }
+  #bonheur-famille > h3 {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
 }
 
-#recettes-presentation {
-  width: 18em;
+@media screen and (min-width: 320px) {
+  #seconde-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 132em;
+  }
+  #recettes-presentation {
+    width: 18em;
+  }
+  #recettes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+  }
+  .consulter {
+    color: white;
+    background: #c3ce73;
+    padding: 0.5em 1em 0.5em 1em;
+    font-size: 0.8em;
+    font-weight: 500;
+    width: 9em;
+    border-radius: 6px;
+  }
+  .titre-recette {
+    font-weight: 500;
+  }
+  .recette {
+    line-height: 25px;
+  }
 }
 
-#recettes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100vw;
-}
-
-.consulter {
-  color: white;
-  background: #c3ce73;
-  padding: 0.5em 1em 0.5em 1em;
-  font-size: 0.8em;
-  font-weight: 500;
-  width: 9em;
-  border-radius: 6px;
-}
-
-.titre-recette {
-  font-weight: 500;
-}
-
-.recette {
-  line-height: 25px;
+@media screen and (orientation: landscape) {
+  #seconde-section {
+    height: 120em;
+  }
+  #recettes-presentation {
+    width: 90vw;
+  }
+  #recettes-presentation > h3 {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .recette {
+    height: 10em;
+    width: 90vw;
+  }
+  #premiere-recette {
+    height: 25em;
+    grid-gap: 1.5rem;
+    -ms-grid-rows: 4em 12em 10em 5em;
+        grid-template-rows: 4em 12em 10em 5em;
+  }
 }
 
 @media screen and (min-width: 320px) {

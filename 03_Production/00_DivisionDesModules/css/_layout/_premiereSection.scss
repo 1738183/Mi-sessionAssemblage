@@ -23,7 +23,7 @@
      align-items: flex-start;
      font-family: 'Roboto', sans-serif;
      margin:1em auto;
-     margin-top:0em;
+     margin-top:0.4em;
      padding:5px auto;
      background:#bac373;
      width:18em;
@@ -47,7 +47,8 @@
 
  #titre-presentation{
      font-weight: 200;
-     margin-bottom:0.2em;
+     margin-top:2.2em;
+     margin-bottom:0.3em;
  }
 
  #art{
@@ -66,22 +67,20 @@
      font-weight:500;
  }
 
- .orange{
-     color:rgb(255, 105, 86);
-     font-weight: 500;
- }
 
  #photo{
      color:rgb(37, 37, 37);
      font-size:0.5em;
      font-weight:200;
+     align-self:flex-start;
  }
  
  #auteur{
     @include flex-colonne-centre;
     justify-content: center;
+    align-items: flex-start;
     width:18em;
-    height:12em;
+    height:14em;
     flex-direction:column;
 }
 
@@ -100,22 +99,40 @@
  #nom-auteur{
      display:flex;
      flex-direction: column;
-     align-items:center ;
-     justify-content: center; 
-     margin:0em;     
+     align-items:center;
+     justify-content: center;
+     margin:0em;
+     margin-left:2.2em;     
      color:hsl(0, 0%, 16%);
  }
 
  #prenom-auteur{
-     color:hsl(0, 0%, 0%);
      margin-bottom:0px;
-     padding-bottom:2em;
+     margin-top:0.8em;
  }
+ 
+ div#auteur > #nom-auteur > h4:first-of-type{
+     color:hsl(0, 0%, 0%);
+     font-size: 0.9em;
+ }
+
+ div#auteur > #nom-auteur > h4{
+    color:hsl(0, 0%, 60%);
+}
 
  #famille-auteur{
      margin:0em;
      font-size:0.8em;
  }
+
+ div#origine > .orange  {
+    margin-top:0em;
+ }
+
+ .orange  {
+    color:rgb(255, 105, 86);
+    font-weight: 500;
+}
 
  #contenu{
      font-weight:300;
@@ -138,4 +155,43 @@
      @include flex-colonne-centre;
      width:18em;
  }
+}
+
+@media screen and (orientation: landscape) {
+
+    .titre-page{
+        width:90vw;
+    }
+
+    #premiere-section{
+        width:80vw;
+        height:60em;
+    }
+
+    #presentation{
+        width:90vw;
+        height:25em;
+    }
+
+    #titre-presentation{
+        align-self: flex-start;
+        margin-top:0em;
+    }
+
+    #auteur{
+        align-self: start;
+    }
+
+    #origine{
+        width:90vw;
+    }
+
+    #bonheur-famille{
+        width:90vw;
+    }
+
+    #bonheur-famille > h3{
+        align-self:start;
+    }
+
 }

@@ -5,6 +5,9 @@
     align-items:center;
 }
 
+@media screen and (min-width:320px) {
+
+
 #seconde-section{
     @include flex-colonne-centre;
     height:132em;
@@ -36,4 +39,37 @@
 
 .recette{
     line-height:25px;
+}
+
+}
+
+@media screen and (orientation: landscape) {
+
+#seconde-section{
+    height:120em;
+
+}
+
+#recettes-presentation{
+    width:90vw;
+}
+
+#recettes-presentation > h3{
+    align-self:start;
+}
+
+.recette{
+    height:10em;
+    width:90vw;
+}
+
+#premiere-recette{
+    height:25em;
+    grid-gap:1.5rem;
+    grid-template-rows:
+    4em 12em 10em 5em;
+}
+
+#deuxieme-recette{
+}
 }

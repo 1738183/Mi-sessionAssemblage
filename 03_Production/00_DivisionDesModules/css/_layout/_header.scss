@@ -7,9 +7,9 @@
 }
 @media screen and (min-width:320px) {
 
-    body{
-        margin:0em;
-    }
+body{
+    margin:0em;
+}
     
 header{    
     @include flex-colonne-centre;
@@ -18,20 +18,18 @@ header{
  }
 
 .header-wrapper {
-    display:flex;
-    flex-direction: column; 
+    @include flex-colonne-centre;
     width:100%;
     height:30vh;
 }
 
 .hero{
     align-self: center;
-    
 }
 
 #barre-navigation{
-    display:flex;
-    align-items: center;
+    @include flex-colonne-centre;
+    flex-direction: row;
     justify-content: space-between;
     color:#fff;
     position:fixed;
@@ -73,4 +71,26 @@ header{
     margin:10px 0px 10px 0px;
 }
 
+}
+
+@media screen and (orientation: landscape) {
+    #interface{
+        width:50em;
+    }
+
+    header{
+        height:31em;
+        justify-content: center;
+    }
+
+
+    #logo-entreprise{
+        top:10em;
+    }
+
+    img{
+        max-width: 100%;
+        height:auto;
+    }
+    
 }
