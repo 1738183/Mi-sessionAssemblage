@@ -34,4 +34,16 @@ footer > h4{
     padding-top:1.5em;
     }
 
+    #premiere-recette{
+        grid-template-rows:20em 8em;
+    }
+    
+    #deuxieme-recette{
+        grid-template-rows:20em;
+    }
+
+    #troisieme-recette{
+        grid-template-rows:20em 9em;
+    }
+
 }

@@ -17,36 +17,45 @@
   }
 }
 
+@media screen and (min-width: 960px) {
+  aside {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2.5rem;
+        grid-template-areas: 'auteur' 'publicite1' 'publicite2';
+  }
+}
+
 #premiere-recette {
   display: -ms-grid;
   display: grid;
-  grid-gap: 1.5rem;
-  -ms-grid-rows: 2.5em 13em 8.5em 2em;
-      grid-template-rows: 2.5em 13em 8.5em 2em;
+  grid-gap: 1rem;
+  -ms-grid-rows: 13em 12em;
+      grid-template-rows: 13em 12em;
   -ms-grid-columns: 97%;
       grid-template-columns: 97%;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 
 #deuxieme-recette {
   display: -ms-grid;
   display: grid;
-  grid-gap: 1.5rem;
-  -ms-grid-rows: 2.5em 13em 18em 2em;
-      grid-template-rows: 2.5em 13em 18em 2em;
+  grid-gap: 1rem;
+  -ms-grid-rows: 13em 21.5em;
+      grid-template-rows: 13em 21.5em;
   -ms-grid-columns: 97%;
       grid-template-columns: 97%;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 
 #troisieme-recette {
   display: -ms-grid;
   display: grid;
-  grid-gap: 1.5rem;
-  -ms-grid-rows: 2.5em 13em 13.5em 2em;
-      grid-template-rows: 2.5em 13em 13.5em 2em;
+  grid-gap: 1rem;
+  -ms-grid-rows: 13em 17em;
+      grid-template-rows: 13em 17em;
   -ms-grid-columns: 97%;
       grid-template-columns: 97%;
-  margin-bottom: 2.5em;
+  margin-bottom: 0em;
 }
 /*# sourceMappingURL=interface.css.map */

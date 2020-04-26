@@ -22,11 +22,10 @@
      @include flex-colonne-centre;
      align-items: flex-start;
      font-family: 'Roboto', sans-serif;
-     margin:1em auto;
-     margin-top:0.4em;
+     margin:0.8em auto;
      padding:5px auto;
      background:#bac373;
-     width:100%;
+     width:90vw;
      height:1.4em;
  }
 
@@ -138,11 +137,11 @@
      @include flex-colonne-centre;
  }
 
-  div#bonheur-famille > h4{
+  div#bonheur-famille > div#photo > h4{
      color:rgb(0, 0, 0);
      font-size:0.6em;
      font-weight:200;
-     align-self:flex-start;
+     margin:0.8em 0em 0.3em 0em;
  }
 }
  @media screen and (min-width:375px) {
@@ -159,6 +158,7 @@
     #origine{
         margin-top:1em;
     }
+
 
  }
 
@@ -177,7 +177,6 @@
 
     #premiere-section{
         width:92vw;
-        height:73em;
         font-size:1.2em;
     }
 
@@ -218,9 +217,16 @@
 
 @media screen and (min-width:600px) and (orientation: portrait) {
 
+    .titre-page{
+        margin-top:0.7em;
+    }
+
+    #Collaboration{
+        font-size:0.7em;
+    }
 
     #titre-presentation{
-        font-size:1.7em;
+        font-size:1.8em;
     }
 
     #premiere-section{
@@ -230,5 +236,13 @@
     #introduction{
         grid-gap:0.2em;
         grid-template-columns:25% 75% ;
+    }
+
+    #bonheur-famille > h3{
+        align-self: flex-start;
+    }
+
+    #bonheur-famille > h4{
+        align-self: center;
     }
 }

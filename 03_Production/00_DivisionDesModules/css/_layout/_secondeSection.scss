@@ -19,13 +19,18 @@
 }
 
 #recettes{
-    margin-left:7vw;
-    width:90vw;
+    margin-left:6vw;
+    width:92vw;
 }
 
 #recette{
     width:100vw;
 }
+
+.recette{
+    margin-bottom:2em;
+}
+
 
 .consulter{
     color:hsl(0, 100%, 100%);
@@ -55,7 +60,12 @@
 
 #recettes-presentation{
     margin-left: 4vw;
+    margin-bottom:3em;
     width:92vw;
+}
+
+.titre-recette{
+    margin-bottom:1.5em;
 }
 
 .recette{
@@ -66,22 +76,99 @@
     margin-left:4vw;
 }
 
+}
+
+@media screen and (min-width:375px) {
+    
 #premiere-recette{
     grid-template-rows:
-    3em 19em 5em 2em; 
-    margin-bottom:2em;
+    13em 10em;
 }
 
 #deuxieme-recette{
     grid-template-rows:
-    3em 19em 8em 2em;
-    margin-bottom:2em;
+    13em 18em;
 }
 
 #troisieme-recette{
     grid-template-rows:
-    3em 19em 6.5em 2em;
-    margin-bottom:3em;
+    13em 15em;
+}
 }
 
+@media screen and (min-width:600px) and (orientation: portrait) {
+    
+    #recettes-presentation{
+        margin-left:3.5vw;
+        width:93vw;
+    }
+
+    #deuxieme-recette{
+        margin-bottom:0em;
+    }
+
+    #recettes{
+        align-self:center;
+        margin-left:3vw;
+        line-height:1em;
+    }
+
+    #premiere-recette{
+        grid-gap:2rem;
+        grid-template-areas:
+        'image texte';
+        grid-template-columns: 50% 45%;
+        grid-template-rows:17em;
+        margin-bottom:0em;
+        
+    }
+
+    .content-recette{
+        margin-top:1.8em;
+        line-height:1em;
+        grid-area: texte;
+    }
+
+    #crevette {
+        grid-area: image;
+    }
+
+    #deuxieme-recette{
+        grid-gap:2rem;
+        grid-template-areas:
+        'image texte';
+        grid-template-columns: 50% 43%;
+        grid-template-rows:25em;
+        margin-bottom:0em;
+    }
+
+    #tomate{
+        grid-area: image;
+    }
+
+    #troisieme-recette{
+        grid-gap:2rem;
+        grid-template-areas:
+        'image texte';
+        grid-template-columns: 50% 43%;
+        grid-template-rows:23em;
+        margin-bottom:0em;
+    }
+
+    #sandwich{
+        grid-area: image;
+    }
+
+    .titre-recette{
+        font-size:1.1em;
+        position:relative;
+        left:51vw;
+        top:2.5em;
+        width:45vw;
+    }
+
+    
+
+    
+    
 }

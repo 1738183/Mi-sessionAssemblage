@@ -34,7 +34,7 @@
                 </div>
             </div>
          <picture class="hero">
-            <source media="(min-width: 684px)"   
+            <source media="(min-width: 684px) and (orientation: landscape)"   
                     srcset="03_Production/00_DivisionDesModules/img/jay-wennington-N_Y88TWmGwA-unsplash-assets/photo(landscape)-760.jpg"> 
             <source media="(min-width: 600px)"   
                     srcset="03_Production/00_DivisionDesModules/img/jay-wennington-N_Y88TWmGwA-unsplash-assets/photo-600.jpg">                   
@@ -47,17 +47,20 @@
             <div id="logo-entreprise">
                 <h1 id="titre-entreprise-un">Foodies </h1> <h1 id="titre-entreprise-deux"> le magazine </h1>
             </div>
-    </div>  
+        </div>  
     </div>
     </header>
-    
+    <div class="titre-page">
+        <h3 id="Collaboration"> Collaboration spéciale</h3>
+    </div>
+ <aside>    
+ <div class="publicite">
+     
+ </div>    
+ </aside>
     <div id="interface">
-
     <section id="premiere-section">
 
-        <div class="titre-page">
-            <h3 id="Collaboration"> Collaboration spéciale</h3>
-        </div>
 
     <div id="presentation">
 <h2 id="titre-presentation"> Le potluck, recevoir sans se casser la tête </h2>
@@ -90,14 +93,18 @@
         </div>       
     <div id="bonheur-famille">
         <h3 class="orange">Du bonheur à partager en famille et entre amis</h3>
+        <div id="photo">
         <picture>
-            <source media="(min-width: 684px)" 
+            <source media="(min-width: 684px) and (orientation: landscape)" 
             srcset="03_Production/00_DivisionDesModules/img/josh-frenette-dqA8Fc-D-os-unsplash-assets/photo(landscape)-696.jpg">
+            <source media="(min-width: 600px)" 
+            srcset="03_Production/00_DivisionDesModules/img/josh-frenette-dqA8Fc-D-os-unsplash-assets/photo-550.jpg">
             <source media="(min-width: 320px)" 
             srcset="03_Production/00_DivisionDesModules/img/josh-frenette-dqA8Fc-D-os-unsplash-assets/photo-284.jpg">
             <img src="03_Production/00_DivisionDesModules/img/josh-frenette-dqA8Fc-D-os-unsplash-assets/photo-284.jpg">
         </picture>
         <h4>Photo de Josh Frenette</h4>
+       </div>
         <p id="contenu">
             Integer tristique magna eu neque convallis, a efficitur ipsum rutrum. 
             Vivamus bibendum lobortis orci, a dictum diam semper id. Etiam scelerisque, 
@@ -123,67 +130,78 @@
          </p> 
         </div>
         <article id="recettes">
+            <h3 class="titre-recette">
+                Salade de crevettes de saison
+            </h3>
             <div id="premiere-recette">
-                <h3 class="titre-recette">
-                    Salade de crevettes de saison
-                </h3>
-                <picture>
+                <picture id="crevette">
                     <source media="(min-width: 768px)" 
-                            srcset="03_Production/00_DivisionDesModules/img/ryan-concepcion-w_z0RJCSBiE-unsplash-assets/photo-768.jpg">
-                    <source media="(min-width: 684px)"   
+                            srcset="03_Production/00_DivisionDesModules/img/ryan-concepcion-w_z0RJCSBiE-unsplash-assets/photo-350.jpg">
+                    <source media="(min-width: 684px) and (orientation: landscape)"   
                             srcset="03_Production/00_DivisionDesModules/img/ryan-concepcion-w_z0RJCSBiE-unsplash-assets/photo(landscape)-684.jpg">            
-                    <source media="(min-width: 320px)" 
+                    <source media="(min-width:600px)"
+                            srcset="03_Production/00_DivisionDesModules/img/ryan-concepcion-w_z0RJCSBiE-unsplash-assets/photo(tablette)-280.jpg">           
+                   <source media="(min-width: 320px)" 
                             srcset="03_Production/00_DivisionDesModules/img/ryan-concepcion-w_z0RJCSBiE-unsplash-assets/photo-280.jpg">
                             <img src="03_Production/00_DivisionDesModules/img/ryan-concepcion-w_z0RJCSBiE-unsplash-assets/photo-280.jpg" alt="hero" style="width:auto;">    
                     </picture>  
+
+                    <div class="content-recette">
                 <p class="recette">
                   Eleifend sit amet ipsum quis, aliquam luctus neque. In vitae justo ut risus volutpat accumsan sed nec est. 
                   Nunc leo arcu, porttitor eget turpis ac, consequat porttitor risus. Mauris porttitor tristique eros, non dictum purus aliquet nec.
                 </p>
                 <bt class="consulter">Consulter la recette</bt>
+                    </div>
             </div>
-            <div id="deuxieme-recette">
             <h3 class="titre-recette">
                 Une salade de tomates fraîches
             </h3>
-            <picture>
+            <div id="deuxieme-recette">
+            <picture id="tomate">
                 <source media="(min-width: 768px)" 
-                        srcset="03_Production/00_DivisionDesModules/img/mateus-campos-felipe-WFpIKyhUMpg-unsplash-assets/photo-768.jpg">
-                <source media="(min-width: 684px)"   
+                        srcset="03_Production/00_DivisionDesModules/img/mateus-campos-felipe-WFpIKyhUMpg-unsplash-assets/photo-350.jpg">
+                <source media="(min-width: 684px) and (orientation: landscape)"   
                         srcset="03_Production/00_DivisionDesModules/img/mateus-campos-felipe-WFpIKyhUMpg-unsplash-assets/photo(landscape)-684.jpg">            
+                <source media="(min-width:600px)"
+                srcset="03_Production/00_DivisionDesModules/img/mateus-campos-felipe-WFpIKyhUMpg-unsplash-assets/photo(tablette)-280.jpg">            
                 <source media="(min-width: 320px)" 
-                        srcset="03_Production/00_DivisionDesModules/img/mateus-campos-felipe-WFpIKyhUMpg-unsplash-assets/photo-280.jpg">
-                        <img src="03_Production/00_DivisionDesModules/img/mateus-campos-felipe-WFpIKyhUMpg-unsplash-assets/photo-280.jpg" alt="hero" style="width:auto;">    
+                        srcset="03_Production/00_DivisionDesModules/img/mateus-campos-felipe-WFpIKyhUMpg-unsplash-assets/photo(mobile)-280.jpg">
+                        <img src="03_Production/00_DivisionDesModules/img/mateus-campos-felipe-WFpIKyhUMpg-unsplash-assets/photo(mobile)-280.jpg" alt="hero" style="width:auto;">    
                 </picture>   
+                <div class="content-recette">
             <p class="recette">
              Porta vitae magna eget, vestibulum molestie lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
              Cras laoreet sagittis risus, eu luctus nibh accumsan sed. Nunc neque nisl, imperdiet nec nibh quis, luctus luctus sem. Suspendisse gravida ipsum eu velit pharetra, non suscipit ipsum dignissim. In aliquam maximus nisl, a commodo ipsum dictum ut. 
              Etiam placerat, nisi vel facilisis dapibus, nisl sapien pellentesque velit, sit amet gravida est dolor aliquam lectus.
             </p>
             <bt class="consulter">Consulter la recette</bt>
+            </div>
         </div>
+        <h3 class="titre-recette">
+            De petits sandwich tout simples
+            </h3>
             <div id="troisieme-recette">
-                <h3 class="titre-recette">
-                De petits sandwich tout simples
-                </h3>
-                <picture>
+       
+                <picture id="sandwich">
                     <source media="(min-width: 768px)" 
-                            srcset="03_Production/00_DivisionDesModules/img/anna-sullivan-BtLSvyFcBS4-unsplash-assets/photo-768.jpg">
-                    <source media="(min-width: 684px)"   
+                            srcset="03_Production/00_DivisionDesModules/img/anna-sullivan-BtLSvyFcBS4-unsplash-assets/photo-350.jpg">
+                    <source media="(min-width: 684px) and (orientation: landscape)"   
                             srcset="03_Production/00_DivisionDesModules/img/anna-sullivan-BtLSvyFcBS4-unsplash-assets/photo(landscape)-684.jpg">            
+                    <source media="(min-width: 600px)" 
+                            srcset="03_Production/00_DivisionDesModules/img/anna-sullivan-BtLSvyFcBS4-unsplash-assets/photo(tablette)-280.jpg">        
                     <source media="(min-width: 320px)" 
                             srcset="03_Production/00_DivisionDesModules/img/anna-sullivan-BtLSvyFcBS4-unsplash-assets/photo-280.jpg">
                             <img src="03_Production/00_DivisionDesModules/img/anna-sullivan-BtLSvyFcBS4-unsplash-assets/photo-280.jpg" alt="hero" style="width:auto;">    
                     </picture>  
+                <div class="content-recette">
                 <p class="recette">
-                    Cras laoreet sagittis risus, eu luctus nibh accumsan sed. Nunc neque nisl, imperdiet nec nibh quis, luctus luctus sem. 
-                    Suspendisse gravida ipsum eu velit pharetra, non suscipit ipsum dignissim. In aliquam maximus nisl, a commodo ipsum dictum ut.
-                    Etiam placerat, nisi vel facilisis dapibus, nisl sapien pellentesque velit, sit amet gravida est dolor aliquam lectus.    
+                    Eleifend sit amet ipsum quis, aliquam luctus neque. In vitae justo ut risus volutpat accumsan sed nec est. Nunc leo arcu, porttitor eget turpis ac, consequat porttitor risus. Mauris porttitor tristique eros, non dictum purus aliquet nec.
                 </p>
                 <bt class="consulter">Consulter la recette</bt>
             </div>
+            </div>
             <div class="publicite">
-
             </div>
         </article>
     </section>
@@ -191,6 +209,5 @@
     <footer>
         <h4>@CSTJ|Techniques d'intégration multimédia 2020 - travail de mi-session</h4>    
         </footer>
-
 </body>
 </html>
