@@ -1,0 +1,52 @@
+@media screen and (min-width: 320px) {
+  div#interface {
+    font-family: 'Roboto', sans-serif;
+    max-width: 100vw;
+    line-height: 22px;
+    margin: 0 auto;
+  }
+  div#interface h4 {
+    color: var(--couleurGris_pale);
+  }
+  #introduction {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 0.8em;
+    -ms-grid-columns: 45% 50%;
+        grid-template-columns: 45% 50%;
+  }
+}
+
+#premiere-recette {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.5rem;
+  -ms-grid-rows: 2.5em 13em 8.5em 2em;
+      grid-template-rows: 2.5em 13em 8.5em 2em;
+  -ms-grid-columns: 97%;
+      grid-template-columns: 97%;
+  margin-bottom: 1em;
+}
+
+#deuxieme-recette {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.5rem;
+  -ms-grid-rows: 2.5em 13em 18em 2em;
+      grid-template-rows: 2.5em 13em 18em 2em;
+  -ms-grid-columns: 97%;
+      grid-template-columns: 97%;
+  margin-bottom: 1em;
+}
+
+#troisieme-recette {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.5rem;
+  -ms-grid-rows: 2.5em 13em 13.5em 2em;
+      grid-template-rows: 2.5em 13em 13.5em 2em;
+  -ms-grid-columns: 97%;
+      grid-template-columns: 97%;
+  margin-bottom: 2.5em;
+}
+/*# sourceMappingURL=interface.css.map */

@@ -3,82 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Foodies le magazine</title>
+    <link rel="stylesheet" href="03_Production/00_DivisionDesModules/css/style.css">
+    <link rel="stylesheet" media="all and (orientation:portrait)" href="portrait.css">
+    <link rel="stylesheet" media="all and (orientation:landscape)" href="landscape.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Roboto:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <header>
-        <div class="nav-wrapper">
-            <aside class="nav">
-                <nav>
-                    <ul class="menu-principal">
-                        <li>Recettes </li>
-                        <li>Accords mets-vins</li>
-                        <li>Accords mets-bières</li>
-                        <li>Foodtrotter</li>
-                        <li>Coups de food</li>
-                        <li>Art de recevoir</li>
-                    </ul>
-                </nav>
-            </aside>
-        </div>
-        <div class="hero">
-            <div class="titre-entreprise"> <h1> Foodies le magazine</h1></div>
-        </div>
-    </header>
-    <div class="main">
-        <div class="titre-page">
-            <h3 class="Collaboration"> Collaboration spéciale</h3>
-        </div>
-
-    <section class="premiere-section">
-
-    <div class="presentation">
-<h2 class ="titre-presentation"> Le potluck, recevoir sans se casser la tête </h2>
-<h4>Art de recevoir</h4>
-<p>
-   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere ante id aliquet tincidunt. Praesent dignissim non metus a sollicitudin. 
-   Mauris aliquam sed leo et fringilla. Suspendisse ut tellus sodales, sodales turpis ut, varius elit. Suspendisse cursus justo vitae odio elementum, 
-   id aliquam tellus vestibulum.
-</p>
+        <div class="header-wrapper">
+            <div id="barre-navigation">
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <img id="menu-hamburger" src="03_Production/00_DivisionDesModules/img/bars-solid.svg">
+                </label>
+                <div class="side-bar">
+                        <ul>
+                            <li> <a href ="#">Recettes </a> </li>
+                            <li> <a href ="#">Accords mets-vins</a> </li>
+                            <li> <a href ="#">Accords mets-bières</a></li>
+                            <li> <a href ="#">Foodtrotter</a></li>
+                            <li> <a href ="#">Coups de food</a></li>
+                            <li> <a href ="#">Art de recevoir</a></li>
+                        </ul>
+                </div>
+                <div id="authentification">
+                    <h3>Se connecter</h3>
+                </div>
+            </div>
+         <picture class="hero">
+            <source media="(min-width: 684px)"   
+                    srcset="03_Production/00_DivisionDesModules/img/jay-wennington-N_Y88TWmGwA-unsplash-assets/photo(landscape)-760.jpg"> 
+            <source media="(min-width: 600px)"   
+                    srcset="03_Production/00_DivisionDesModules/img/jay-wennington-N_Y88TWmGwA-unsplash-assets/photo-600.jpg">                   
+            <source media="(min-width: 375px)" 
+                    srcset="03_Production/00_DivisionDesModules/img/jay-wennington-N_Y88TWmGwA-unsplash-assets/photo-375.jpg">            
+            <source media="(min-width: 320px)" 
+                    srcset="03_Production/00_DivisionDesModules/img/jay-wennington-N_Y88TWmGwA-unsplash-assets/photo-320.jpg">
+                <img src="03_Production/00_DivisionDesModules/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="hero" style="width:auto;">    
+            </picture>   
+            <div id="logo-entreprise">
+                <h1 id="titre-entreprise-un">Foodies </h1> <h1 id="titre-entreprise-deux"> le magazine </h1>
+            </div>
+    </div>  
     </div>
-    <div class="origine">
-        <div class="left-content">
-            <img src="man-shape.svg"> 
-            <div class="auteur"> 
-                <h4 class="prénom-auteur">Jean</h4>
-                <h4>Louis</h4>
-            </div> 
+    </header>
+    
+    <div id="interface">
+
+    <section id="premiere-section">
+
+        <div class="titre-page">
+            <h3 id="Collaboration"> Collaboration spéciale</h3>
         </div>
-        <div class="right-content"> <h3>L'origine du mot "potluck"</h3> 
+
+    <div id="presentation">
+<h2 id="titre-presentation"> Le potluck, recevoir sans se casser la tête </h2>
+<h4 id="art">Art de recevoir</h4>
+    <div id="introduction">
+    <div id="auteur">
+            <div id="border">
+                <img id="man" src="03_Production/00_DivisionDesModules/img/man-shape.svg"> 
+            </div>
+            <div id="nom-auteur"> 
+                <h4 id="prenom-auteur">Louis</h4>
+                 <h4 id="famille-auteur">Tremblay</h4>
+            </div> 
+    </div> 
+    <i>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere ante id aliquet tincidunt. Praesent dignissim non metus a sollicitudin. 
+        Mauris aliquam sed leo et fringilla. Suspendisse ut tellus sodales, sodales turpis ut, varius elit. Suspendisse cursus justo vitae odio elementum, 
+        id aliquam tellus vestibulum.
+    </i>
+   </div>
+    </div>
+    <div id="origine">  
+    <h3 class="orange">L'origine du mot "potluck"</h3>
             <p>
                 Quisque viverra ligula at elit imperdiet pretium. Vestibulum dapibus eleifend quam, eu posuere dolor venenatis vel. 
                 Morbi finibus nisl at vehicula rutrum. Vivamus at viverra sapien. Sed consectetur eget ipsum facilisis pharetra. Nulla facilisi. 
-                Pellentesque interdum orci ipsum, ac fringilla nunc scelerisque id. Etiam sodales enim in finibus cursus. Mauris mollis feugiat sem ac consequat. 
-                Morbi vitae turpis ornare, pulvinar leo et, blandit orci. Fusce arcu lorem, pharetra id sagittis non, hendrerit in ligula.
+                Pellentesque interdum orci ipsum, ac fringilla nunc scelerisque id.Etiam sodales enim in finibus cursus. Mauris mollis feugiat sem ac consequat. 
+                Morbi vitae turpis ornare, pulvinar leo et, blandit orci. Fusce arcu lorem, pharetra id sagittis non, hendrerit in ligula. 
             </p> 
-        </div>
-    </div>
-    <div class="bonheur-famille">
-        <h3>Du bonheur à partager en famille et entre amis</h3>
-        <img src="">
+        </div>       
+    <div id="bonheur-famille">
+        <h3 class="orange">Du bonheur à partager en famille et entre amis</h3>
+        <picture>
+            <source media="(min-width: 684px)" 
+            srcset="03_Production/00_DivisionDesModules/img/josh-frenette-dqA8Fc-D-os-unsplash-assets/photo(landscape)-696.jpg">
+            <source media="(min-width: 320px)" 
+            srcset="03_Production/00_DivisionDesModules/img/josh-frenette-dqA8Fc-D-os-unsplash-assets/photo-284.jpg">
+            <img src="03_Production/00_DivisionDesModules/img/josh-frenette-dqA8Fc-D-os-unsplash-assets/photo-284.jpg">
+        </picture>
         <h4>Photo de Josh Frenette</h4>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere ante id aliquet tincidunt. 
-            Praesent dignissim non metus a sollicitudin. Mauris aliquam sed leo et fringilla. Suspendisse ut tellus sodales, 
-            sodales turpis ut, varius elit. Suspendisse cursus justo vitae odio elementum, id aliquam tellus vestibulum.
+        <p id="contenu">
+            Integer tristique magna eu neque convallis, a efficitur ipsum rutrum. 
+            Vivamus bibendum lobortis orci, a dictum diam semper id. Etiam scelerisque, 
+            dolor at ultrices porttitor, nibh nisl laoreet lorem, ac pharetra diam justo non magna. 
+            Sed nec varius lorem, non rhoncus lacus. Aliquam tristique sodales tortor vitae euismod. 
+            Quisque pulvinar orci purus, eget vulputate erat feugiat a. Mauris rhoncus tristique ornare. 
+            Vivamus pulvinar lacinia velit eu sagittis.
         </p>
     </div>
-    <div class="publicité">
+    <div class="publicite">
         
     </div>
     </section>
-
-
-    <section class="deuxieme-section">
-        <div class="recettes-presentation">
-          <h3>Des suggestions de plats à apporter</h3>  
-          <p> Morbi neque ante, porttitor at nisi eu, hendrerit venenatis sapien. 
+    <section id="seconde-section">
+        <div id="recettes-presentation">
+          <h3 class="orange">Des suggestions de plats à apporter</h3>  
+          <p id="plat"> Morbi neque ante, porttitor at nisi eu, hendrerit venenatis sapien. 
              Suspendisse potenti. Etiam volutpat facilisis leo ac facilisis. 
              Praesent sit amet odio in nunc eleifend cursus gravida sit amet libero. 
              Integer eu convallis eros, eget viverra justo. Phasellus sagittis in nisi quis vulputate. Phasellus semper erat hendrerit porttitor cursus. 
@@ -86,49 +122,75 @@
              Ut venenatis consequat dapibus.
          </p> 
         </div>
-        <article class="recettes">
-            <div class="premiere-recette">
+        <article id="recettes">
+            <div id="premiere-recette">
                 <h3 class="titre-recette">
                     Salade de crevettes de saison
                 </h3>
-                <img src="" >
-                <p>
+                <picture>
+                    <source media="(min-width: 768px)" 
+                            srcset="03_Production/00_DivisionDesModules/img/ryan-concepcion-w_z0RJCSBiE-unsplash-assets/photo-768.jpg">
+                    <source media="(min-width: 684px)"   
+                            srcset="03_Production/00_DivisionDesModules/img/ryan-concepcion-w_z0RJCSBiE-unsplash-assets/photo(landscape)-684.jpg">            
+                    <source media="(min-width: 320px)" 
+                            srcset="03_Production/00_DivisionDesModules/img/ryan-concepcion-w_z0RJCSBiE-unsplash-assets/photo-280.jpg">
+                            <img src="03_Production/00_DivisionDesModules/img/ryan-concepcion-w_z0RJCSBiE-unsplash-assets/photo-280.jpg" alt="hero" style="width:auto;">    
+                    </picture>  
+                <p class="recette">
                   Eleifend sit amet ipsum quis, aliquam luctus neque. In vitae justo ut risus volutpat accumsan sed nec est. 
                   Nunc leo arcu, porttitor eget turpis ac, consequat porttitor risus. Mauris porttitor tristique eros, non dictum purus aliquet nec.
                 </p>
-                <bt>Consulter la recette</bt>
+                <bt class="consulter">Consulter la recette</bt>
             </div>
-            <div class="deuxieme-recette"></div>
+            <div id="deuxieme-recette">
             <h3 class="titre-recette">
                 Une salade de tomates fraîches
             </h3>
-            <img src="">
-            <p>
+            <picture>
+                <source media="(min-width: 768px)" 
+                        srcset="03_Production/00_DivisionDesModules/img/mateus-campos-felipe-WFpIKyhUMpg-unsplash-assets/photo-768.jpg">
+                <source media="(min-width: 684px)"   
+                        srcset="03_Production/00_DivisionDesModules/img/mateus-campos-felipe-WFpIKyhUMpg-unsplash-assets/photo(landscape)-684.jpg">            
+                <source media="(min-width: 320px)" 
+                        srcset="03_Production/00_DivisionDesModules/img/mateus-campos-felipe-WFpIKyhUMpg-unsplash-assets/photo-280.jpg">
+                        <img src="03_Production/00_DivisionDesModules/img/mateus-campos-felipe-WFpIKyhUMpg-unsplash-assets/photo-280.jpg" alt="hero" style="width:auto;">    
+                </picture>   
+            <p class="recette">
              Porta vitae magna eget, vestibulum molestie lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
              Cras laoreet sagittis risus, eu luctus nibh accumsan sed. Nunc neque nisl, imperdiet nec nibh quis, luctus luctus sem. Suspendisse gravida ipsum eu velit pharetra, non suscipit ipsum dignissim. In aliquam maximus nisl, a commodo ipsum dictum ut. 
              Etiam placerat, nisi vel facilisis dapibus, nisl sapien pellentesque velit, sit amet gravida est dolor aliquam lectus.
             </p>
-            <bt>Consulter la recette</bt>
-            <div class="troisieme-recette">
+            <bt class="consulter">Consulter la recette</bt>
+        </div>
+            <div id="troisieme-recette">
                 <h3 class="titre-recette">
                 De petits sandwich tout simples
                 </h3>
-                <img src="">
-                <p>
+                <picture>
+                    <source media="(min-width: 768px)" 
+                            srcset="03_Production/00_DivisionDesModules/img/anna-sullivan-BtLSvyFcBS4-unsplash-assets/photo-768.jpg">
+                    <source media="(min-width: 684px)"   
+                            srcset="03_Production/00_DivisionDesModules/img/anna-sullivan-BtLSvyFcBS4-unsplash-assets/photo(landscape)-684.jpg">            
+                    <source media="(min-width: 320px)" 
+                            srcset="03_Production/00_DivisionDesModules/img/anna-sullivan-BtLSvyFcBS4-unsplash-assets/photo-280.jpg">
+                            <img src="03_Production/00_DivisionDesModules/img/anna-sullivan-BtLSvyFcBS4-unsplash-assets/photo-280.jpg" alt="hero" style="width:auto;">    
+                    </picture>  
+                <p class="recette">
                     Cras laoreet sagittis risus, eu luctus nibh accumsan sed. Nunc neque nisl, imperdiet nec nibh quis, luctus luctus sem. 
                     Suspendisse gravida ipsum eu velit pharetra, non suscipit ipsum dignissim. In aliquam maximus nisl, a commodo ipsum dictum ut.
                     Etiam placerat, nisi vel facilisis dapibus, nisl sapien pellentesque velit, sit amet gravida est dolor aliquam lectus.    
                 </p>
-                <bt>Consulter la recette</bt>
+                <bt class="consulter">Consulter la recette</bt>
             </div>
-            <div class="publicité">
+            <div class="publicite">
 
             </div>
         </article>
     </section>
 </div>
-<footer>
-<h4>@CSTJ|Techniques d'intégration multimédia 2020 -travail de mi-session</h4>    
-</footer>
+    <footer>
+        <h4>@CSTJ|Techniques d'intégration multimédia 2020 - travail de mi-session</h4>    
+        </footer>
+
 </body>
 </html>

@@ -1,0 +1,234 @@
+@mixin flex-colonne-centre {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+ @media screen and (min-width:320px) {
+
+ #premiere-section{
+    @include flex-colonne-centre;
+     margin:0 auto;
+     width:90vw;
+ }
+
+ p {
+     text-align:justify;
+     font-size:0.8em;
+     font-weight: 200;
+ }    
+
+ .titre-page{
+     @include flex-colonne-centre;
+     align-items: flex-start;
+     font-family: 'Roboto', sans-serif;
+     margin:1em auto;
+     margin-top:0.4em;
+     padding:5px auto;
+     background:#bac373;
+     width:100%;
+     height:1.4em;
+ }
+
+ #Collaboration{
+     padding: {
+       left:0.8em;
+     }
+     color:#fff;
+     font-size:11px;
+     font-weight: 500;
+ }
+
+ #presentation{ 
+    @include flex-colonne-centre;
+    justify-content: center;
+}
+
+ #titre-presentation{
+     font-weight: 200;
+     margin-top:1vh;
+     margin-bottom:0.3em;
+ }
+
+ #art{
+     align-self: flex-start;
+     color:hsl(0, 0%, 60%);
+     font-size:0.7em;
+     font-weight:600;
+     margin-top:0em;
+     margin-bottom:2em;
+ }
+
+ i{
+     line-height:2;
+     font-size:0.6em;
+     text-align:center;
+     align-self: center;
+     font-weight:500;
+     margin-top:0.5em;
+     margin-bottom:2em;
+ }
+
+ 
+ #auteur{
+    @include flex-colonne-centre;
+    justify-content: center;
+    align-items: flex-start;
+    height:13em;
+    flex-direction:column;
+}
+
+ #border{
+     @include flex-colonne-centre;
+     border:2px solid hsl(20, 100%, 81%);
+     width:7.5em;
+     height:8em;
+ }
+
+ #man{
+     padding-top:2.2em;
+     width:10em;
+ }
+ 
+ #nom-auteur{
+     @include flex-colonne-centre;
+     margin-left:2.3em;     
+     color:hsl(0, 0%, 16%);
+ }
+
+ #prenom-auteur{
+     margin-bottom:0px;
+     margin-top:0.8em;
+ }
+ 
+ div#auteur > #nom-auteur > h4:first-of-type{
+     color:hsl(0, 0%, 0%);
+     font-size: 0.9em;
+ }
+
+ div#auteur > #nom-auteur > h4{
+    color:hsl(0, 0%, 60%);
+}
+
+ #famille-auteur{
+     margin:0em;
+     font-size:0.8em;
+ }
+
+ #origine{
+     margin-top:1em;
+ }
+
+ div#origine > .orange  {
+    margin-top:0em;
+ }
+
+ .orange  {
+    color:rgb(255, 105, 86);
+    font-weight: 500;
+}
+
+ #contenu{
+     font-weight:300;
+     font-size:0.8em;
+     line-height: 1.5em;
+ }
+
+ #bonheur-famille{
+     @include flex-colonne-centre;
+ }
+
+  div#bonheur-famille > h4{
+     color:rgb(0, 0, 0);
+     font-size:0.6em;
+     font-weight:200;
+     align-self:flex-start;
+ }
+}
+ @media screen and (min-width:375px) {
+
+    #introduction{
+        grid-gap:0.3em;
+        grid-template-columns:40% 60% ;
+    }
+
+    i{  
+         line-height: 3em;
+    }
+
+    #origine{
+        margin-top:1em;
+    }
+
+ }
+
+@media screen and (min-width: 320px) and (orientation: landscape) {
+
+    .titre-page{
+        width:92vw;
+        height:1.8em;
+        margin-top:0em;
+    }
+
+    #Collaboration{
+        font-size:0.8em;
+        font-weight:400;
+    }
+
+    #premiere-section{
+        width:92vw;
+        height:73em;
+        font-size:1.2em;
+    }
+
+    #presentation{
+        height:20em;
+    }
+
+    #titre-presentation{
+        font-size:2em;
+        align-self: flex-start;
+        margin-top:0.6em;
+        margin-bottom:0.5em;
+    }
+
+    #art{
+        font-size:0.9em;
+        font-weight:500;
+    }
+
+    #introduction{
+        grid-gap:0.3em;
+        grid-template-columns:30% 70% ;
+    }
+
+    #auteur{
+        align-self: start;
+    }
+
+    #bonheur-famille > h3{
+        align-self:start;
+    }
+
+    #contenu{
+        width:92vw;
+    }
+
+}
+
+@media screen and (min-width:600px) and (orientation: portrait) {
+
+
+    #titre-presentation{
+        font-size:1.7em;
+    }
+
+    #premiere-section{
+        width:93vw;
+    }
+
+    #introduction{
+        grid-gap:0.2em;
+        grid-template-columns:25% 75% ;
+    }
+}

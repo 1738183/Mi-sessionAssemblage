@@ -1,0 +1,87 @@
+@mixin flex-colonne-centre {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+@media screen and (min-width:320px) {
+
+
+#seconde-section{
+    width:90vw;
+    font-size:1em;
+}
+
+#recettes-presentation{
+    margin-left:5vw;
+    width:90vw;
+}
+
+#recettes{
+    margin-left:7vw;
+    width:90vw;
+}
+
+#recette{
+    width:100vw;
+}
+
+.consulter{
+    color:hsl(0, 100%, 100%);
+    background: hsl(67, 48%, 63%);
+    padding:0.5em 1em 0.5em 1em;
+    font-size:0.8em;
+    font-weight: 500;
+    width:9em;
+    border-radius: 6px;
+}
+
+.titre-recette{
+    font-weight:500;
+}
+
+.recette{
+    line-height:25px;
+}
+
+}
+
+@media screen and (min-width:320px) and (orientation: landscape) {
+
+#seconde-section{
+    font-size:1.2em;
+}
+
+#recettes-presentation{
+    margin-left: 4vw;
+    width:92vw;
+}
+
+.recette{
+    width:92vw;
+}
+
+#recettes{
+    margin-left:4vw;
+}
+
+#premiere-recette{
+    grid-template-rows:
+    3em 19em 5em 2em; 
+    margin-bottom:2em;
+}
+
+#deuxieme-recette{
+    grid-template-rows:
+    3em 19em 8em 2em;
+    margin-bottom:2em;
+}
+
+#troisieme-recette{
+    grid-template-rows:
+    3em 19em 6.5em 2em;
+    margin-bottom:3em;
+}
+
+}
