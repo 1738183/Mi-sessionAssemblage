@@ -1,0 +1,127 @@
+@media screen and (min-width:320px) {
+
+    
+.side-bar{
+    position: fixed;
+    width:220px;
+    height:100%;
+    left: -17em;
+    top: 2.4em;
+    background: rgb(0, 0, 0);
+    transition: all .7s ease;
+
+}
+
+.side-bar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+    font-size: 1em;
+    color: hsl(0, 0%, 100%);
+    box-sizing: border-box;
+    border-top: 1px solid rgba(225,225,225,.1);
+    border-bottom: 1px solid hsl(0, 0%, 0%);
+    transition: .4s;
+    
+}
+
+ul li:hover a{
+    padding-left:1.8em;
+}
+
+ul li:hover{
+    background-color: hsl(12, 72%, 54%)
+}
+
+.side-bar ul a i{
+    margin-right: 16px;
+}
+
+li{
+    list-style:none;
+}
+
+li > a{
+    text-decoration: none;
+}
+
+#check{
+    display: none;
+}
+
+#menu-hamburger{
+    position:relative;
+    left:1em;
+    top:0.8em;
+    width:1em;
+    color:#fff;
+}
+
+label #menu-hamburger{
+    position: absolute;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#check:checked ~ .side-bar{
+    left: 0;
+}
+
+}
+
+@media screen and (min-width:320px) and (orientation: landscape) {
+
+#menu-hamburger{
+    width:1.5em;
+    left:1.5em;
+    top:1em;
+}
+
+.side-bar{
+    width:100%;
+    height:5em;
+    top:3.5em;
+    left: -100em;
+    transition: 1.5s;
+}
+
+.side-bar ul a{
+    font-size:1em;  
+}
+
+ul{
+    display:flex;
+    padding-left:0em;
+    flex-direction:row;
+}
+
+li{
+    width:18vw;
+ 
+}
+
+.side-bar ul a {
+    margin-right:0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li:hover a{
+    padding-bottom:2em;
+    padding-left:0em;
+    border-bottom-color:hsla(0, 0%, 100%, 0);
+}
+
+li:nth-child(2){
+    width:25vw;
+}
+li:nth-child(3){
+    width:25vw;
+}
+
+}

@@ -1,0 +1,49 @@
+
+@mixin flex-colonne-centre {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+@media screen and (min-width:320px) {
+
+footer{
+    @include flex-colonne-centre;
+    font-family: 'Roboto', sans-serif;
+    background:#353535;
+    color:#fff;
+    width:100vw;
+    height:4vh;
+    font-size:0.5em;
+    letter-spacing: 0.1em;
+}
+
+footer > h4{
+    font-weight: 400;
+}
+
+}
+
+
+@media screen and (min-width:320px) and (orientation: landscape) {
+    footer{
+    font-size:0.9em; 
+    height:2em;  
+    justify-content: flex-end;
+    padding-top:1.5em;
+    }
+
+    #premiere-recette{
+        grid-template-rows:20em 8em;
+    }
+    
+    #deuxieme-recette{
+        grid-template-rows:20em;
+    }
+
+    #troisieme-recette{
+        grid-template-rows:20em 9em;
+    }
+
+}

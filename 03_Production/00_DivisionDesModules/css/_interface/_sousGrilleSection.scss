@@ -1,0 +1,30 @@
+
+
+#premiere-recette{
+    display:grid;
+    grid-gap:1rem;
+    grid-template-rows:
+    13em 12em;
+    grid-template-columns:97%;
+    margin-bottom:3em;
+}
+
+#deuxieme-recette{
+    display:grid;
+    grid-gap:1rem;
+    grid-template-rows:
+    13em 21.5em;
+    grid-template-columns:97%;
+    margin-bottom:3em;
+}
+
+#troisieme-recette{
+    display:grid;
+    grid-gap:1rem;
+    grid-template-rows:
+    13em 17em;
+    grid-template-columns:97%;
+    margin-bottom:0em;
+}
+
+
